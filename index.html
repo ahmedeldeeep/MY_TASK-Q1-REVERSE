@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to reverse the letters of any word.</p>
+
+<button onclick="myfunction()">click to reverse</button>
+<input type="text" id="wrd">
+<h1 id="title"></h1>
+
+<script>
+
+
+function myfunction() {
+  var wrd=(document.getElementById('wrd').value);
+  const arrword=wrd.split('');
+  // console.log(arrword);
+  var rev=arrword.reverse();
+  var con=rev.join('');
+  console.log(con);
+//  word.reverse();
+  document.getElementById("title").innerHTML = con;
+
+  console.log(con);
+}
+</script>
+
+</body>
+</html>
